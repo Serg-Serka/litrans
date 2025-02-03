@@ -5,5 +5,13 @@
     "logistic": "Logistic",
     "contact": "Contact"
   },
+  "tradingPage": {
+    "title": "Trading",
+    "introText1": "UAB Litrans Company",
+    "introText2": "Is a reliable partner in the trade of oleochemical industry products, manufactured by Ukrainian and European factories.",
+    "introText3": "Our many years of experience and professional team allow us to guarantee stable product quality, precise deliveries, and an individual approach to each client.",
+    "introText4": "Check out our full range of products on the website and make sure that Litrans is the choice that will enhance your business efficiency.",
+    "additionalText": "Some text will be here also"
+  },
   "language": "Language"
 }

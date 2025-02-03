@@ -13,8 +13,8 @@ const Header = () => {
     <header className="flex justify-between items-center p-4 bg-white shadow-md">
       <nav className="flex gap-4">
         <Link href="/" className={pathname === "/" ? "text-blue-500 font-bold" : ""}>{t("navigation.home")}</Link>
-        <Link href="/trading" className={pathname === "/about" ? "text-blue-500 font-bold" : ""}>{t("navigation.trading")}</Link>
-        <Link href="/logistic" className={pathname === "/services" ? "text-blue-500 font-bold" : ""}>{t("navigation.logistic")}</Link>
+        <Link href="/trading" className={pathname === "/trading" ? "text-blue-500 font-bold" : ""}>{t("navigation.trading")}</Link>
+        <Link href="/logistic" className={pathname === "/logistic" ? "text-blue-500 font-bold" : ""}>{t("navigation.logistic")}</Link>
         <Link href="/contact" className={pathname === "/contact" ? "text-blue-500 font-bold" : ""}>{t("navigation.contact")}</Link>
       </nav>
       <LanguageSwitcher />
