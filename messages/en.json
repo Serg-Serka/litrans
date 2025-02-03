@@ -1,0 +1,9 @@
+{
+  "navigation": {
+    "home": "Home",
+    "trading": "Trading",
+    "logistic": "Logistic",
+    "contact": "Contact"
+  },
+  "language": "Language"
+}
