@@ -15,6 +15,38 @@ h1 {
     margin-bottom: 20px;
 }
 
-header nav a {
-    @apply text-gray-700 hover:text-blue-500 transition-all;
+/*header nav a {*/
+/*    @apply text-gray-700 hover:text-blue-500 transition-all;*/
+/*}*/
+
+.header {
+    position: relative;
+    width: 100vw;
+    height: 25vh; /* You can adjust the height */
+    background-image: url('../../public/images/trading_1_1.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    color: white; /* Change text color for visibility */
+    padding: 1px 200px 50px;
+}
+
+.nav-link-text {
+    color: white;
+    font-size: 20px;
+}
+
+.nav-link-selected-text {
+    @apply nav-link-text;
+    font-weight: bold;
+ }
+
+.nav-link-image {
+    width: 70px;
+    height: 60px;
+    padding-bottom: 10px;
+    background: transparent;
+    /*position: relative;*/
 }

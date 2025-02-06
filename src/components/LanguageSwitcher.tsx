@@ -3,7 +3,6 @@
 import { useRouter } from "next/navigation";
 // import Link from "next/link";
 import { useLocale } from "next-intl";
-// @ts-ignore
 import Cookies from "js-cookie";
 
 const LanguageSwitcher = () => {
@@ -19,13 +18,13 @@ const LanguageSwitcher = () => {
     <div className="flex gap-2">
       <button
         onClick={() => changeLanguage("en")}
-        className={currentLocale === "en" ? "text-blue-500 font-bold" : ""}
+        className={currentLocale === "en" ? "nav-link-selected-text" : "nav-link-text"}
       >
         EN
       </button>
       <button
         onClick={() => changeLanguage("uk")}
-        className={currentLocale === "uk" ? "text-blue-500 font-bold" : ""}
+        className={currentLocale === "uk" ? "nav-link-selected-text" : "nav-link-text"}
       >
         УКР
       </button>

@@ -5,6 +5,9 @@
     text-align: center;
     padding: 20px;
 }
+.intro-text-section {
+    margin-top: 20px;
+}
 
 .intro-text,
 .additional-text {
@@ -25,7 +28,7 @@
 .full-width-image-wrapper {
     position: relative;
     width: 100vw;
-    height: 45vh; /* Adjust height as needed */
+    height: 65vh; /* Adjust height as needed */
 }
 
 .full-width-image {
