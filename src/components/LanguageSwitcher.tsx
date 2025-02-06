@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 // import Link from "next/link";
 import { useLocale } from "next-intl";
+// @ts-ignore
 import Cookies from "js-cookie";
 
 const LanguageSwitcher = () => {

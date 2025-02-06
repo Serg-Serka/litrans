@@ -50,3 +50,8 @@ h1 {
     background: transparent;
     /*position: relative;*/
 }
+
+.card-title {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
