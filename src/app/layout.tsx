@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "../styles/globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { NextIntlClientProvider } from "next-intl";
 import {getLocale, getMessages} from 'next-intl/server';
 import { Raleway } from "next/font/google";
@@ -45,6 +46,7 @@ export default async function RootLayout({
         >
         <Header />
           {children}
+        <Footer />
         </body>
       </NextIntlClientProvider>
     </html>
