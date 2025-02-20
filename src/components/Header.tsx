@@ -23,8 +23,6 @@ const Header = () => {
             height={50}
           />
         </Link>
-        <Link href="/trading" className={pathname === "/trading" ? "nav-link-selected-text" : "nav-link-text"}>{t("navigation.trading")}</Link>
-        <Link href="/logistic" className={pathname === "/logistic" ? "nav-link-selected-text" : "nav-link-text"}>{t("navigation.logistic")}</Link>
         <Link href="/contact" className={pathname === "/contact" ? "nav-link-selected-text" : "nav-link-text"}>{t("navigation.contact")}</Link>
       </nav>
       <nav className="flex gap-4">

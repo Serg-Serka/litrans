@@ -1,50 +1,48 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import { useTranslations } from 'next-intl';
+import './trading/trading.css';
+import HorizontalLine from "@/components/HorizontalLine";
 
-export default function HomePage() {
+export default function TradingPage() {
+  const t = useTranslations('tradingPage');
+
   return (
-    <div className="flex flex-col items-center text-center">
-      {/* Welcome text */}
-      <h1 className="text-3xl font-bold my-8">Welcome to Litrans!</h1>
-
-      {/* Full-width image */}
-      <div className="relative w-full h-72 md:h-96">
-        <Image
-          src="/images/home_1.jpeg"
-          alt="Home Top Image"
-          layout="fill"
-          objectFit="cover"
-        />
-      </div>
-
-      {/* Row with two linked images */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8 w-full max-w-4xl">
-        <Link href="/trading" className="relative h-60 group">
-          <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-            <span className="text-white text-2xl font-bold z-10">Trading</span>
-          </div>
+    <div className="trading-page">
+      <h1 className="page-title">{t("title")}</h1>
+      <HorizontalLine color="#676767" height={5} />
+      {/*<hr style={{*/}
+      {/*  color: '#676767',*/}
+      {/*  backgroundColor: '#676767',*/}
+      {/*  height: 5,*/}
+      {/*  width: '40vw',*/}
+      {/*  opacity: 1,*/}
+      {/*}}/>*/}
+      <section className="intro-text-section">
+        <p className="intro-text">{t('introText1')}</p>
+        <p className="intro-text">{t('introText2')}</p>
+        <p className="intro-text">{t('introText3')}</p>
+        <p className="intro-text">{t('introText4')}</p>
+      </section>
+      <section className="image-section">
+        <div className="full-width-image-wrapper">
           <Image
-            src="/images/home_2.jpeg" // Replace with actual image path
+            src="/images/header.webp"
+            // src="/images/trading_1.jpeg"
             alt="Trading"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-lg"
+            className="full-width-image"
+            // width={800}
+            // height={500}
+            fill
+            priority
           />
-        </Link>
-
-        <Link href="/logistic" className="relative h-60 group">
-          <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-            <span className="text-white text-2xl font-bold z-10">Logistic</span>
-          </div>
-          <Image
-            src="/images/home_3.jpeg" // Replace with actual image path
-            alt="Logistic"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-lg"
-          />
-        </Link>
-      </div>
+        </div>
+      </section>
+      <section className="additional-text">
+        <p className="additional-text">{t('additionalText')}</p>
+        <p className="additional-text">{t('additionalText')}</p>
+        <p className="additional-text">{t('additionalText')}</p>
+        <p className="additional-text">{t('additionalText')}</p>
+      </section>
     </div>
   );
 }
