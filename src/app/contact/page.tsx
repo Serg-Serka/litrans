@@ -28,7 +28,7 @@ export default function ContactPage() {
           <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
           <p className="text-gray-700">
             You can fill out the form or send an email to:
-            <a href="mailto:info@litrans.com" className="text-blue-600 font-semibold"> info@litrans.com</a>
+            <a href="mailto:sales@litrans.lt" className="text-blue-600 font-semibold">sales@litrans.lt</a>
           </p>
         </div>
 

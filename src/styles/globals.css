@@ -47,12 +47,34 @@ h1 {
 .nav-link-image {
     width: 60px;
     height: 46px;
-    /*padding-bottom: 10px;*/
     background: transparent;
-    /*position: relative;*/
+    justify-self: center;
+}
+
+.footer-image {
+    width: 135px;
+    height: 104px;
+    background: transparent;
+    justify-self: center;
 }
 
 .card-title {
     padding-bottom: 0;
     margin-bottom: 0;
+}
+
+#__next { /* If using Next.js */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; /* Pushes footer down */
+}
+
+footer {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
 }

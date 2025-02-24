@@ -16,7 +16,7 @@ const Header = () => {
         <button
           className="flex items-center px-3 py-2 border rounded-md shadow-md"
           >
-          <Link href="/" className={pathname === "/" ? "nav-link-selected-text" : "nav-link-text"}>
+          <Link href="/" className={pathname === "/" ? "nav-link-selected-text" : "nav-link-text"} style={{ alignItems: 'center' }}>
             <Image
               src="/images/logo_png4.png"
               // src="/images/logo_2.webp"
@@ -25,7 +25,7 @@ const Header = () => {
               width={140}
               height={100}
             />
-            {t("navigation.home")}
+            <p>{t("navigation.home")}</p>
           </Link>
         </button>
 
