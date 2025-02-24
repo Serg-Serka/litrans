@@ -9,7 +9,7 @@ interface LogisticCardProps {
 const LogisticCard: React.FC<LogisticCardProps> = ({ imageSrc, title }) => {
   return (
     <div className="bg-gray-200 p-4 rounded-lg flex flex-col h-full">
-      <div className="relative w-full h-40">
+      <div className="relative w-full h-60">
         <Image src={imageSrc} alt={title} layout="fill" objectFit="cover" className="rounded-t-lg"/>
       </div>
       <div className="flex-grow"></div>
