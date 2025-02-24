@@ -21,7 +21,7 @@ const geistMono = Geist_Mono({
 
 const raleway = Raleway({
   subsets: ["latin"],
-  weight: ["400", "700"], // Normal & Bold
+  weight: ["400", "500", "700", "800"], // Normal & Bold
   variable: "--font-raleway", // Use CSS variable
 });
 
@@ -42,7 +42,7 @@ export default async function RootLayout({
     <html lang={locale} className={raleway.className}>
       <NextIntlClientProvider messages={messages}>
         <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+          className={`${geistSans.variable} ${geistMono.variable} ${raleway.className} antialiased`}
         >
         <Header />
           {children}

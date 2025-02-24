@@ -12,20 +12,26 @@ const Header = () => {
 
   return (
     <header className="flex justify-between items-center bg-white shadow-md header">
-      <nav className="flex gap-4">
-        <Link href="/" className={pathname === "/" ? "nav-link-selected-text" : "nav-link-text"}>
-          <Image
-            src="/images/logo_3.png"
-            // src="/images/logo_2.webp"
-            alt={t("navigation.home")}
-            className="nav-link-image"
-            width={70}
-            height={50}
-          />
-        </Link>
-        <Link href="/contact" className={pathname === "/contact" ? "nav-link-selected-text" : "nav-link-text"}>{t("navigation.contact")}</Link>
+      <nav className="flex gap-4 p-20">
+        <button
+          className="flex items-center px-3 py-2 border rounded-md shadow-md"
+          >
+          <Link href="/" className={pathname === "/" ? "nav-link-selected-text" : "nav-link-text"}>
+            <Image
+              src="/images/logo_png4.png"
+              // src="/images/logo_2.webp"
+              alt={t("navigation.home")}
+              className="nav-link-image"
+              width={140}
+              height={100}
+            />
+            {t("navigation.home")}
+          </Link>
+        </button>
+
       </nav>
-      <nav className="flex gap-4">
+      <nav className="flex gap-4" style={{ alignItems: "center" }}>
+        <Link href="/contact" className={pathname === "/contact" ? "nav-link-selected-text" : "nav-link-text"}>{t("navigation.contact")}</Link>
         <LanguageSwitcher />
       </nav>
     </header>
