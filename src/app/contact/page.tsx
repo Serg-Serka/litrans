@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
+import Image from "next/image";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -17,22 +18,22 @@ export default function ContactPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
-    // Handle form submission (API call or email service)
   };
 
   return (
     <div className="max-w-4xl mx-auto my-12 p-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* Left Column - Contact Info */}
         <div className="flex flex-col justify-center">
-          <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
+          <div className="relative w-full h-80">
+            <Image src='/images/map.png' alt='Map' layout="fill" objectFit="cover" className="rounded-t-lg"/>
+          </div>
+          <h2 className="text-3xl font-bold mb-4 mt-2">Contact Us</h2>
           <p className="text-gray-700">
             You can fill out the form or send an email to
             <a href="mailto:sales@litrans.lt" className="text-blue-600 font-semibold"> sales@litrans.lt</a>
           </p>
         </div>
 
-        {/* Right Column - Contact Form */}
         <form onSubmit={handleSubmit} className="bg-gray-100 p-6 rounded-lg shadow-md">
           <div className="grid grid-cols-1 gap-4">
             <input

@@ -18,8 +18,7 @@ const Header = () => {
           >
           <Link href="/" className={pathname === "/" ? "nav-link-selected-text" : "nav-link-text"} style={{ alignItems: 'center' }}>
             <Image
-              src="/images/logo_png4.png"
-              // src="/images/logo_2.webp"
+              src="/images/logo.png"
               alt={t("navigation.home")}
               className="nav-link-image"
               width={140}

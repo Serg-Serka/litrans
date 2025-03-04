@@ -15,21 +15,15 @@ h1 {
     margin-bottom: 20px;
 }
 
-/*header nav a {*/
-/*    @apply text-gray-700 hover:text-blue-500 transition-all;*/
-/*}*/
-
 .header {
     position: relative;
     width: 100vw;
     height: 25vh; /* You can adjust the height */
-    background-image: url('../../public/images/trading_1_1.webp');
+    background-image: url('../../public/images/header.webp');
     background-size: cover;
     background-position: center;
     display: flex;
-    /*align-items: center;*/
-    /*justify-content: center;*/
-    color: white; /* Change text color for visibility */
+    color: white;
     padding: 0 100px 100px 0;
 }
 
@@ -63,14 +57,14 @@ h1 {
     margin-bottom: 0;
 }
 
-#__next { /* If using Next.js */
+#__next {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 main {
-    flex: 1; /* Pushes footer down */
+    flex: 1;
 }
 
 footer {

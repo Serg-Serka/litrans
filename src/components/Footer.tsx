@@ -8,10 +8,8 @@ const Footer = () => {
   return (
     <footer className="flex justify-between items-center bg-white shadow-md p-5">
       <div className="flex gap-4 p-4">
-        {/* Company Logo */}
         <Image
-          src="/images/logo_png4.png"
-          // src="/images/logo_2.webp"
+          src="/images/logo.png"
           alt={t("navigation.home")}
           className="footer-image"
           width={140}
@@ -20,7 +18,6 @@ const Footer = () => {
       </div>
 
       <div style={{ marginBottom: '20px' }}>
-        {/* Company Info */}
         <p>UAB LITRANS</p>
         <p>Mėtų g. 21A, Bajorų k., Vilniaus raj., Lietuva</p>
         <p>Kodas 305457073</p>
@@ -28,7 +25,6 @@ const Footer = () => {
       </div>
 
       <div style={{ marginBottom: '20px' }}>
-        {/* Contact Info */}
         <p>
           <a href="mailto:sales@litrans.lt" className="text-blue-600 font-semibold">sales@litrans.lt</a></p>
         <p>
@@ -44,7 +40,6 @@ const Footer = () => {
       </div>
 
       <div style={{marginBottom: '20px'}}>
-        {/* Certificate Image with Download Link */}
         <a href="/docs/certificate.pdf" target="_blank" rel="noopener noreferrer">
           <Image src="/images/certificate_icon.jpeg" alt="Certificate" width={150} height={150} />
         </a>
