@@ -2,8 +2,10 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 export default function ContactPage() {
+  const t = useTranslations();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -27,9 +29,9 @@ export default function ContactPage() {
           <div className="relative w-full h-80">
             <Image src='/images/map.png' alt='Map' layout="fill" objectFit="cover" className="rounded-t-lg"/>
           </div>
-          <h2 className="text-3xl font-bold mb-4 mt-2">Contact Us</h2>
+          <h2 className="text-3xl font-bold mb-4 mt-2">{t('contactPage.contactUs')}</h2>
           <p className="text-gray-700">
-            You can fill out the form or send an email to
+            {t('contactPage.contactText')}
             <a href="mailto:sales@litrans.lt" className="text-blue-600 font-semibold"> sales@litrans.lt</a>
           </p>
         </div>
@@ -41,7 +43,7 @@ export default function ContactPage() {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              placeholder="Your Name"
+              placeholder={t("contactPage.formName")}
               required
               className="p-3 border border-gray-300 rounded w-full"
             />
@@ -51,7 +53,7 @@ export default function ContactPage() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="Your Email"
+              placeholder={t("contactPage.formEmail")}
               required
               className="p-3 border border-gray-300 rounded w-full"
             />
@@ -61,7 +63,7 @@ export default function ContactPage() {
               name="mobile"
               value={formData.mobile}
               onChange={handleChange}
-              placeholder="Your Mobile Number"
+              placeholder={t("contactPage.formMobile")}
               required
               className="p-3 border border-gray-300 rounded w-full"
             />
@@ -70,7 +72,7 @@ export default function ContactPage() {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              placeholder="Your Message"
+              placeholder={t("contactPage.formMessage")}
               required
               rows={4}
               className="p-3 border border-gray-300 rounded w-full"
@@ -80,7 +82,7 @@ export default function ContactPage() {
               type="submit"
               className="bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition"
             >
-              Send Message
+              {t('contactPage.formSend')}
             </button>
           </div>
         </form>

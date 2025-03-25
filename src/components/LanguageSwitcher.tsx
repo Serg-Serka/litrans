@@ -3,7 +3,8 @@
 import { useRouter } from "next/navigation";
 // import Link from "next/link";
 import { useLocale } from "next-intl";
-// @ts-ignore
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 import Cookies from "js-cookie";
 import "../../node_modules/flag-icons/css/flag-icons.min.css";
 import {useState} from "react";

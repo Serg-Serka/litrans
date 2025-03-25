@@ -2,7 +2,10 @@
   "name": "litrans",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://litrans.com",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
@@ -10,6 +13,7 @@
   },
   "dependencies": {
     "flag-icons": "^7.3.2",
+    "gh-pages": "^6.3.0",
     "js-cookie": "^3.0.5",
     "next": "15.1.6",
     "next-intl": "^3.26.3",
